@@ -1,8 +1,10 @@
-import { Component, createElement as e } from 'react';
+import React from 'react';
 
-class App extends Component {
+class App extends React.Component {
     render() {
-        return e('h1', null, 'Hello World');
+        return(
+            <h1>Hello World</h1>
+        );
     }
 }
 
