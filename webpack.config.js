@@ -11,6 +11,11 @@ module.exports = {
             options: {
                 presets: ['@babel/env']
             }
+        }, {
+            test: /\.(png|svg|jpg|gif)$/,
+            use: [
+                'file-loader'
+            ]
         }]
     },
 
