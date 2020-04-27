@@ -1,0 +1,43 @@
+.talent {
+    background-image: url('../../../assets/talent-icons-sprite.png');
+    background-repeat: no-repeat;
+    height: 50px;
+    width: 50px;
+    border: none;
+
+    &:disabled {
+        background-position-y: -50px;
+    }
+}
+
+.talent-Stack {
+    background-position-x: 0px;
+}
+
+.talent-Silverware {
+    background-position-x: -50px;
+}
+
+.talent-Cake {
+    background-position-x: -100px;
+}
+
+.talent-Crown {
+    background-position-x: -150px;
+}
+
+.talent-Boat {
+    background-position-x: -200px;
+}
+
+.talent-Scuba {
+    background-position-x: -250px;
+}
+
+.talent-Lightning {
+    background-position-x: -300px;
+}
+
+.talent-Skull {
+    background-position-x: -350px;
+}
