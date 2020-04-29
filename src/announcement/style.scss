@@ -1,6 +1,8 @@
 @import '../mixins';
 
 .announcement {
+    margin: 10px 0;
+
     header {
         @include heading;
         display: flex;
@@ -20,6 +22,7 @@
     }
 
     .content {
+        @include content-border;
         background-image: url('../../assets/news-bg.png');
         font-size: 14px;
         color: #cfcfcf;

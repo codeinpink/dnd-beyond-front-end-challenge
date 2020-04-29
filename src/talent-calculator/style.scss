@@ -2,6 +2,7 @@
 @import '../variables';
 
 .talent-calculator {
+    @include content-border;
     background-image: url('../../assets/talent-calc-bg.png');
 
     header {
