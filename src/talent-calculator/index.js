@@ -19,13 +19,19 @@ class TalentCalculator extends React.Component {
     render() {
         return(
             <div className="talent-calculator">
-                <h2>TitanStar Legends - Rune Mastery Loadout Talent Calculator 9000</h2>
-                <div className="talents">
-                    {this.renderTalentPath('Talent Path 1', ['Stack', 'Silverware', 'Cake', 'Crown'])}
+                <header>
+                    <h2>TitanStar Legends - Rune Mastery Loadout Talent Calculator 9000</h2>
+                </header>
+                <div className="calculator">
+                    <div className="talents">
+                        {this.renderTalentPath('Talent Path 1', ['Stack', 'Silverware', 'Cake', 'Crown'])}
 
-                    {this.renderTalentPath('Talent Path 2', ['Boat', 'Scuba', 'Lightning', 'Skull'])}
+                        {this.renderTalentPath('Talent Path 2', ['Boat', 'Scuba', 'Lightning', 'Skull'])}
+                    </div>
+                    <div className="points-spent">
+                        <h3><span>{this.state.pointsSpent}/{MAX_POINTS}</span> Points Spent</h3>
+                    </div>
                 </div>
-                <h3>{this.state.pointsSpent}/{MAX_POINTS} Points Spent</h3>
             </div>
         );
     }

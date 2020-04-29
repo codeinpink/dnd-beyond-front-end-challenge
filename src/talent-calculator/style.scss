@@ -1,9 +1,68 @@
+@import '../mixins';
+@import '../variables';
+
 .talent-calculator {
+    background-image: url('../../assets/talent-calc-bg.png');
+
+    header {
+        @include heading;
+        width: 965px;
+        height: 43px;
+        margin: 20px auto;
+        box-sizing: border-box;
+
+        h2 {
+            font-size: 25px;
+            text-align: center;
+        }
+    }
+
+    .calculator {
+        display: flex;
+        margin: 25px;
+    }
+
+    .talents {
+        flex: 3;
+    }
+
     .talent-path {
+        display: flex;
+        padding: 25px;
+
+        h3 {
+            font-size: 13px;
+            text-transform: uppercase;
+            align-self: center;
+        }
+
         ol {
             list-style-type: none;
+            flex: 3;
             display: flex;
             justify-content: space-evenly;
+            margin: 0;
+        }
+    }
+
+    .points-spent {
+        width: 176px;
+        height: 90px;
+        background: #090a0c;
+        text-align: center;
+        align-self: center;
+
+        h3 {
+            font-size: 23px;
+            text-transform: none;
+            color: $blue;
+            font-family: 'Open Sans', sans-serif;
+            font-weight: 500;
+
+            span {
+                color: #ffffff;
+                display: block;
+            }
         }
     }
 }

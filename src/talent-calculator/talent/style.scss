@@ -5,26 +5,27 @@
     background-repeat: no-repeat;
     height: 50px;
     width: 50px;
-    border: none;
+    border: #4c4c4c solid 4px;
     box-sizing: content-box;
     padding: 0;
+    cursor: pointer;
 
     &:disabled {
         background-position-y: -50px;
     }
 
     &:focus {
-        outline: $blue solid 2px;
+        outline: $blue solid 4px;
     }
 
     &:active {
-        outline: $blue solid 4px;
+        outline: $blue solid 6px;
     }
 
     &.selected {
         border: solid 4px;
         border-image-slice: 1;
-        border-image-source: linear-gradient(to bottom, $blue, $dark-blue);
+        border-image-source: linear-gradient(to bottom, #9cceff, #354d79, #9cceff);
         -webkit-box-shadow: 0px 0px 10px 0px #ffffff;
         box-shadow: 0px 0px 10px 0px #ffffff;
     }

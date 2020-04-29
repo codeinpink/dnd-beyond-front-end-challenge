@@ -3,8 +3,27 @@
 body {
     background: #0a0f13;
     color: #ffffff;
+    font-family: 'Open Sans', sans-serif;
+}
 
-    #app {
-        width: 1000px;
-    }
+#app {
+    width: 1000px;
+    margin: 0 auto;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Open Sans Semi-bold', sans-serif;
+    margin: 0;
+}
+
+a {
+    color: $blue;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+button {
+    background: $blue;
+    color: white;
+    border-radius: 2px;
 }

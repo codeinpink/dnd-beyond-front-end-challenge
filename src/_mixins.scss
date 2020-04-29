@@ -1,0 +1,8 @@
+@mixin heading {
+    background: #1d1d1d;
+    padding: 10px 20px;
+}
+
+@mixin content-border {
+    border: #1d1d1d 1px solid;
+}
