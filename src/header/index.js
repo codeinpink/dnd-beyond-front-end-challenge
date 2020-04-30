@@ -3,13 +3,19 @@ import logo from '../../assets/logo.png';
 import style from './style.scss';
 import SearchBox from './search';
 import MainMenu from './main-menu';
+import SocialMediaLinks from '../social-media-links';
 
 class Header extends React.Component {
     render() {
         return(
-            <header>
+            <header className="top-header">
                 <img src={logo} alt="Logo" role="presentation"></img>
-                <SearchBox></SearchBox>
+                
+                <div className="right">
+                    <SocialMediaLinks></SocialMediaLinks>
+                    <SearchBox></SearchBox>
+                </div>
+                
                 <MainMenu></MainMenu>
             </header>
         );

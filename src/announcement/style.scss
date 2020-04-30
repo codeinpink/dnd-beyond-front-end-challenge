@@ -38,6 +38,7 @@
     }
 
     button {
+        @include button;
         display: block;
         margin-left: auto;
     }

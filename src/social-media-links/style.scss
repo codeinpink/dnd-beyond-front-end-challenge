@@ -1,0 +1,29 @@
+@import '../_variables.scss';
+
+.social-media-links {
+    display: inline-block;
+    list-style-type: none;
+    margin: 0;
+    margin-left: auto;
+
+    li {
+        display: inline;
+        padding: 5px;
+    }
+
+    a {
+        display: inline-block;
+        background-image: url('../../assets/social-icons-sprite.png');
+        width: 27px;
+        height: 27px;
+        background-color: $blue;
+    }
+
+    .facebook {
+        background-position-x: -27px;
+    }
+
+    .youtube {
+        background-position-x: -54px;
+    }
+}
