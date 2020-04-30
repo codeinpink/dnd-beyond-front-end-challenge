@@ -39,6 +39,8 @@
 
             .menu {
                 display: none;
+                background: $grey;
+                z-index: 100;
             }
 
             &:hover {
