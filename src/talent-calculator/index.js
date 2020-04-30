@@ -18,9 +18,9 @@ class TalentCalculator extends React.Component {
 
     render() {
         return(
-            <div className="talent-calculator">
+            <main className="talent-calculator">
                 <header>
-                    <h2>TitanStar Legends - Rune Mastery Loadout Talent Calculator 9000</h2>
+                    <h1>TitanStar Legends - Rune Mastery Loadout Talent Calculator 9000</h1>
                 </header>
                 <div className="calculator">
                     <div className="talents">
@@ -32,7 +32,7 @@ class TalentCalculator extends React.Component {
                         <h3><span>{this.state.pointsSpent}/{MAX_POINTS}</span> Points Spent</h3>
                     </div>
                 </div>
-            </div>
+            </main>
         );
     }
 
