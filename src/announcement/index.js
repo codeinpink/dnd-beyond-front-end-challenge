@@ -11,7 +11,7 @@ class Announcement extends React.Component {
             <article className="announcement">
                 <header>
                     <h2>{ this.props.title }</h2>
-                    <p>by <a href="#">Shannon</a> at <time datetime={ this.props.dateTime }>{ this.props.displayTime }</time></p>
+                    <p>by <a href="#">Shannon</a> at <time dateTime={ this.props.dateTime }>{ this.props.displayTime }</time></p>
                 </header>
                 <div className="content">
                     <p>Chocolate apple pie sugar plum cake pie sweet roll cheesecake.
