@@ -1,9 +1,70 @@
+@import '../../variables';
+
+@mixin icon {
+    background-image: url('../../../assets/nav-icons-sprite.png');
+    background-repeat: no-repeat;
+    height: 23px;
+    width: 23px;
+    display: block;
+    margin: 0 auto;
+}
+
 .main-menu {
+    background: $grey;
+    height: 60px;
+    font-size: 14px;
+    border-bottom: $blue 2px solid;
+
     ul {
         text-transform: uppercase;
+        padding: 0;
 
         li {
-            display: inline-block;
+            display: inline-grid;
+            padding: 10px;
+
+            &:hover {
+                background: darken($grey, 1%);
+            }
+
+            button {
+                cursor: pointer;
+            }
         }
+
+        .nested-menu {
+            li {
+                display: block;
+            }
+
+            .menu {
+                display: none;
+            }
+
+            &:hover {
+                .menu {
+                    display: block;
+                    background: lighten($grey, 5%);
+                }
+            }
+        }
+    }
+
+    a {
+        color: #ffffff;
+    }
+
+    .snowflakes-icon {
+        @include icon;
+    }
+
+    .magnets-icon {
+        @include icon;
+        background-position-x: -23px;
+    }
+
+    .liquids-icon {
+        @include icon;
+        background-position-x: -46px;
     }
 }

@@ -21,6 +21,12 @@
         }
     }
 
+    a {
+        color: $blue;
+        font-weight: 700;
+        text-decoration: none;
+    }
+
     .content {
         @include content-border;
         background-image: url('../../assets/news-bg.png');
